@@ -12,7 +12,7 @@ from elasticsearch import Elasticsearch
 
 # Required environment variables
 spotfleet = os.getenv('SPOTFLEET_NAME', None)
-ec_index  = os.getenv('EC_INDEX_NAME', 'spotfleet_events')
+es_index  = os.getenv('ES_INDEX_NAME', 'spotfleet_events')
 es_host   = os.getenv('ES_HOST', 'elk.fqdn.com')
 es_port   = os.getenv('ES_PORT', 9200)
 
